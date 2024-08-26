@@ -1,0 +1,282 @@
+.abs { position: relative; }
+
+.folder {
+    position: absolute;
+
+    height: 40vh;
+    width: 30vh;
+}
+
+.folder-img {
+    background-image: url('../assets/folder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 30vh;
+}
+
+.folder-name {
+    text-align: center;
+    color: white;
+
+    font-family: Agrandir;
+    font-size: 1em;
+}
+
+.folder {
+    text-decoration: none;
+}
+
+.folder:nth-child(1) {
+    top: 10%;
+    left: 10%;
+}
+
+.folder:nth-child(2) {
+    bottom: 10%;
+    left: 10%;
+}
+
+.folder:nth-child(3) {
+    top: 10%;
+    right: 10%;
+}
+
+.folder:nth-child(4) {
+    bottom: 10%;
+    right: 10%;
+}
+
+.terminal-container {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal {
+    background-image: url('../assets/terminal.png');
+    background-repeat: no-repeat;
+    aspect-ratio: 5/4;
+
+    width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal h1 {
+    color: var(--primary);
+    font-family: Aurora;
+    font-size: 4em;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+
+.event-grid {
+    box-sizing: border-box;
+    padding: 2.5%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+.folder-info-container {
+    grid-area: 1 / 1 / 6 / 3;
+}
+
+.folder-info {
+    height: 100%;
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 12px 12px 10px 10px;
+    background-color: #1E003F;
+
+    border: 3px #757575 solid;
+}
+
+.folder-info-header {
+    width: 100%;
+    height: 5%;
+
+    border-radius: 10px 10px 0 0;
+
+    background-color: #424242;
+    border-bottom: 2px #757575 solid;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.circles {
+    height: 100%;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 20%;
+    margin: 0 1% 0 1%;
+}
+
+.circles div {
+    height: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.circles div:nth-child(1) {
+    background-color: #F85D5D;
+}
+
+.circles div:nth-child(2) {
+    background-color: #EBBE00;
+}
+
+.circles div:nth-child(3) {
+    background-color: #00A52E;
+}
+
+.window-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    margin-left: 10%;
+    gap: 20%;
+}
+
+.window-icon div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.window-icon div:nth-child(1) img {
+    height: 50%;
+}
+
+.window-icon div:nth-child(2) img {
+    height: 25%;
+}
+
+.search-icon {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.search-icon img {
+    height: 70%;
+
+    margin-right: 5%;
+}
+
+.folder-data-basic {
+    display: flex;
+    flex-direction: row;
+    height: 25%;
+
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.folder-data-basic img {
+    height: 100%;
+    margin-right: 5%;
+}
+
+.folder-data-basic h1, .folder-data-basic h2 {
+    color: white;
+}
+
+.folder-data-basic h1 {
+    font-size: 22px;
+    font-family: Agrandir;
+}
+
+.folder-data-basic h2 {
+    font-size: 15px;
+}
+
+.general-information {
+    height: 50%;
+    width: 100%;
+
+    padding: 5%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.general-information h1 {
+    font-size: 20px;
+    font-family: Agrandir;
+    letter-spacing: 1px;
+
+    margin: 0;
+}
+
+.general-information ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.preview-image-holder {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.preview-image-holder img {
+    height: 100%;
+}
+
+.guidlines-icon-container {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.registration-icon-container {
+    grid-area: 2 / 5 / 4 / 6;
+}
+
+.about-icon-container {
+    grid-area: 3 / 4 / 5 / 5;
+}
+
+.file-image-holder {
+    height: 100%;
+    width: 100%;
+
+    background-image: url('../assets/file.png');
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-container p {
+    color: white;
+    text-align: center;
+
+    font-family: Agrandir;
+}
