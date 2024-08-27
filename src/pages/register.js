@@ -1,7 +1,19 @@
 import Transitions from "../components/transitions"
 import '../styles/register.css'
+import { useEffect } from "react";
+
+const PAGE_INDEX = 3;
 
 export default function Registration() {
+    useEffect(() => {
+        const links = document.getElementsByClassName('navlink');
+        for (let item of links) {
+            item.classList.remove('active-page-a');
+        }
+
+        links[PAGE_INDEX].classList.add('active-page-a');
+    }, [])
+
     return (
         <>
             <Transitions></Transitions>
