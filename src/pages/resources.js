@@ -1,9 +1,10 @@
-import '../styles/events.css'
+import '../styles/resources.css'
 import { useEffect } from "react";
 import Transitions from '../components/transitions'
 import { Link } from 'react-router-dom';
+import Brochure from '../assets/Techfusion - Brochure.pdf'
 
-const PAGE_INDEX = 0;
+const PAGE_INDEX = 1;
 
 export default function Events() {
     useEffect(() => {
@@ -19,33 +20,21 @@ export default function Events() {
         <>
             <Transitions></Transitions>
             <div className='content abs'>
-                <Link to='/events/techknowquiz' className="folder">
+                <a href='' target='_blank' className="res-folder">
                     <div>
                         <div className="folder-img"></div>
-                        <div className="folder-name">TECHKNOWQUIZ</div>
+                        <div className="folder-name">BROCHURE</div>
                     </div>
-                </Link>
-                <Link to='/events/hack-a-thon' className="folder">
+                </a>
+                <Link to='/resources/oc' className="res-folder">
                     <div>
                         <div className="folder-img"></div>
-                        <div className="folder-name">HACK-A-THON</div>
-                    </div>
-                </Link>
-                <Link to='/events/game-fiesta' className="folder">
-                    <div>
-                        <div className="folder-img"></div>
-                        <div className="folder-name">GAMEFIESTA</div>
-                    </div>
-                </Link>
-                <Link to='/events/decryption-duel' className="folder">
-                    <div>
-                        <div className="folder-img"></div>
-                        <div className="folder-name">DECRYPTIONDUEL</div>
+                        <div className="folder-name">ORGANIZING COMMITTEE</div>
                     </div>
                 </Link>
                 <div className='terminal-container'>
                     <div className='terminal'>
-                        <h1>EVENTS</h1>
+                        <h1>RESOURCES</h1>
                     </div>
                 </div>
             </div>

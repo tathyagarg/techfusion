@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import HomeIcon from '../assets/home.png'
 import { Link } from 'react-router-dom'
 
@@ -10,9 +9,9 @@ export default function Navbar() {
             </a>
             <ul>
                 <li><Link className='navlink' to='/events'><span>EVENTS</span></Link></li>
-                <li><Link className='navlink'>RESOURCES</Link></li>
-                <li><Link className='navlink'>RULES</Link></li>
-                <li><Link className='navlink'>REGISTER</Link></li>
+                <li><Link className='navlink' to='/resources'><span>RESOURCES</span></Link></li>
+                <li><Link className='navlink' to='/guidelines'>GUIDELINES</Link></li>
+                <li><Link className='navlink' to='/register'>REGISTER</Link></li>
             </ul>
         </div>
     )

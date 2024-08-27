@@ -1,0 +1,22 @@
+.res-folder {
+    position: absolute;
+
+    height: 40vh;
+    width: 30vh;
+
+    text-decoration: none;
+}
+
+.res-folder:nth-child(1) {
+    top: 30%;
+    left: 10%;
+    right: unset;
+    bottom: unset
+}
+
+.res-folder:nth-child(2) {
+    top: 30%;
+    right: 10%;
+    left: unset;
+    bottom: unset
+}

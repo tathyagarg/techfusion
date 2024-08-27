@@ -3,6 +3,7 @@ import WindowIcon from '../../assets/window-icon.png'
 import Arrow from '../../assets/arrow.png'
 import Search from '../../assets/search.png'
 import Folder from '../../assets/folder.png'
+import { Link } from "react-router-dom"
 
 export default function Gamefiesta() {
     return (
@@ -57,16 +58,28 @@ export default function Gamefiesta() {
                     </div>
                 </div>
                 <div className="icon-container guidlines-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>GUIDELINES.txt</p>
+                    <Link to='/events/game-fiesta/guidelines'>
+                        <div className="file-image-holder"></div>
+                        <p>GUIDELINES.txt</p>
+                    </Link>
                 </div>
-                <div className="icon-container registration-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>REGISTRATION.txt</p>
+                <div className="icon-container registration-icon-container-1">
+                    <a href='https://forms.gle/vACVrXJo6ej2xWy98'>
+                        <div className="file-image-holder"></div>
+                        <p>REGISTRATION-FORTNITE.txt</p>                        
+                    </a>
+                </div>
+                <div className="icon-container registration-icon-container-2">
+                    <a href='https://forms.gle/YJ9qfK24SMuKunKD8'>
+                        <div className="file-image-holder"></div>
+                        <p>REGISTRATION-VALORANT.txt</p>
+                    </a>
                 </div>
                 <div className="icon-container about-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>README.txt</p>
+                    <Link to='/events/game-fiesta/about'>
+                        <div className="file-image-holder"></div>
+                        <p>README.txt</p>
+                    </Link>
                 </div>
             </div>
         </>

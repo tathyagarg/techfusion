@@ -3,6 +3,7 @@ import WindowIcon from '../../assets/window-icon.png'
 import Arrow from '../../assets/arrow.png'
 import Search from '../../assets/search.png'
 import Folder from '../../assets/folder.png'
+import { Link } from "react-router-dom"
 
 export default function DecryptionDuel() {
     return (
@@ -57,16 +58,22 @@ export default function DecryptionDuel() {
                     </div>
                 </div>
                 <div className="icon-container guidlines-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>GUIDELINES.txt</p>
+                    <Link to='/events/decryption-duel/guidelines'>
+                        <div className="file-image-holder"></div>
+                        <p>GUIDELINES.txt</p>
+                    </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>REGISTRATION.txt</p>
+                    <a href='https://forms.gle/KPb6kqf8temWiqFbA'>
+                        <div className="file-image-holder"></div>
+                        <p>REGISTRATION.txt</p>
+                    </a>
                 </div>
                 <div className="icon-container about-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>README.txt</p>
+                    <Link to='/events/decryption-duel/about'>
+                        <div className="file-image-holder"></div>
+                        <p>README.txt</p>
+                    </Link>
                 </div>
             </div>
         </>

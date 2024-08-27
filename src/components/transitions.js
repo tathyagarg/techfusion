@@ -13,13 +13,13 @@ const Transitions = ({ children }) => {
             initial='initial'
             animate='animate'
             exit='exit'
-            transition={{ ease: 'easeIn', duration: 1, delay: -0.2 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: -0.1 }}
             style={{
-                height: '100vh',
+                height: '100%',
                 width: '100vw',
                 backgroundColor: 'var(--primary)',
                 position: 'absolute',
-                top: '0',
+                top: window.scrollY,
                 zIndex: 1000
             }}
         >
@@ -30,13 +30,13 @@ const Transitions = ({ children }) => {
             initial='initial'
             animate='animate'
             exit='exit'
-            transition={{ ease: 'easeIn', duration: 1, delay: 0 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 0 }}
             style={{
-                height: '100vh',
+                height: '100%',
                 width: '100vw',
                 backgroundColor: '#f480c8',
                 position: 'absolute',
-                top: '0',
+                top: window.scrollY,
                 zIndex: 1000
             }}
         >
@@ -47,14 +47,13 @@ const Transitions = ({ children }) => {
             initial='initial'
             animate='animate'
             exit='exit'
-            transition={{ ease: 'easeIn', duration: 1, delay: 0.2 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 0.1 }}
             style={{
-                height: '100vh',
+                height: '100%',
                 width: '100vw',
                 backgroundColor: '#e75bb1',
-                // backgroundColor: 'red',
                 position: 'absolute',
-                top: '0',
+                top: window.scrollY,
                 zIndex: 1000
             }}
         >

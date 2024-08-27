@@ -3,11 +3,11 @@ import WindowIcon from '../../assets/window-icon.png'
 import Arrow from '../../assets/arrow.png'
 import Search from '../../assets/search.png'
 import Folder from '../../assets/folder.png'
+import { Link } from "react-router-dom"
 
 export default function Techknowquiz() {
     return (
         <>
-            {/* <script src="https://kit.fontawesome.com/6709d9c7d3.js" crossorigin="anonymous"></script> */}
             <Transitions></Transitions>
             <div className="content event-grid">
                 <div className="folder-info-container">
@@ -57,16 +57,22 @@ export default function Techknowquiz() {
                     </div>
                 </div>
                 <div className="icon-container guidlines-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>GUIDELINES.txt</p>
+                    <Link to='/events/techknowquiz/guidelines'>
+                        <div className="file-image-holder"></div>
+                        <p>GUIDELINES.txt</p>
+                    </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>REGISTRATION.txt</p>
+                    <a href='https://forms.gle/DmRxQ46FwJjRSAzbA'>
+                        <div className="file-image-holder"></div>
+                        <p>REGISTRATION.txt</p>
+                    </a>
                 </div>
                 <div className="icon-container about-icon-container">
-                    <div className="file-image-holder"></div>
-                    <p>README.txt</p>
+                    <Link to='/events/techknowquiz/about'>
+                        <div className="file-image-holder"></div>
+                        <p>README.txt</p>
+                    </Link>
                 </div>
             </div>
         </>

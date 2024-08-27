@@ -1,0 +1,45 @@
+.terminal-container-higher {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2%;
+}
+
+.reg-folder {
+    position: absolute;
+
+    height: 30vh;
+    width: 30vh;
+
+    text-decoration: none;
+}
+
+.reg-folder:nth-child(1) {
+    top: 0;
+    left: 10%;
+}
+
+.reg-folder:nth-child(2) {
+    top: 50%;
+    left: 10%;
+}
+
+.reg-folder:nth-child(3) {
+    top: 60%;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.reg-folder:nth-child(4) {
+    top: 0;
+    right: 10%;
+}
+
+.reg-folder:nth-child(5) {
+    top: 50%;
+    right: 10%;
+}
