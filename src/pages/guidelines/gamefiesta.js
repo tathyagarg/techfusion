@@ -19,7 +19,7 @@ export default function GameFiestaGuidelines() {
                         <li>The event will follow a classic tournament format.</li>
                         <li>Any form of cheating will lead to instant disqualification.</li>
                         <li>Each team should consist of 6 members (5 main players+ 1 substitute player).</li>
-                        <li>For any inquiries about the event, please contact us via email at [insert email address].</li>
+                        <li>For any inquiries about the event, please contact us via email at dpswtechfusion@gmail.com.</li>
                         <li>Further details and topics will be communicated through the designated WhatsApp group.</li>
                     </ul>
                     <h1>FORTNITE</h1>
@@ -29,7 +29,7 @@ export default function GameFiestaGuidelines() {
                         <li>Each team should have 5 players (4 main players+ 1 substitute).</li>
                         <li>Any form of cheating will lead to instant disqualification.</li>
                         <li>Further details and topics will be communicated through the designated WhatsApp group.</li>
-                        <li>For any inquiries about the event, please contact us via email at [insert email address].</li>
+                        <li>For any inquiries about the event, please contact us via email at dpswtechfusion@gmail.com.</li>
                     </ul>
                 </div>
                 <div className='buffer'></div>

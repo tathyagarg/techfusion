@@ -3,7 +3,6 @@
 .folder {
     position: absolute;
 
-    height: 40vh;
     width: 30vh;
 
     text-decoration: none;
@@ -43,6 +42,13 @@
 .folder:nth-child(4) {
     bottom: 10%;
     right: 10%;
+}
+
+.folder:nth-child(5) {
+    top: 60%;
+    left: 50%;
+
+    transform: translateX(-50%);
 }
 
 .terminal-container {
@@ -294,4 +300,86 @@
     text-align: center;
 
     font-family: Agrandir;
+}
+
+@media screen and (max-width: 320px) {
+    .folder-img {
+        height: 20vh !important;
+        aspect-ratio: 1/1;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .folder, .res-folder, .reg-folder {
+        position: relative !important;
+        top: unset !important;
+        left: unset !important;
+        right: unset !important;
+
+        transform: none !important;
+
+        width: 100% !important;
+        height: unset !important;
+    }
+
+    .folder-holder {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .terminal {
+        width: 75%;
+        background-size: cover;
+    }
+
+    .terminal h1 {
+        font-size: 20px;
+    }
+
+    .folder-data-basic img {
+        height: 50%;
+    }
+
+    .folder-data-basic h1 {
+        font-size: 12px;
+    }
+
+    .folder-data-basic h2 {
+        font-size: 10px;
+    }
+
+    .folder-data-basic div {
+        height: fit-content;
+    }
+
+    .folder-data-basic {
+        height: 20%;
+    }
+
+    .general-information h1 {
+        font-size: 12px;
+    }
+
+    .general-information ul {
+        font-size: 10px;
+    }
+
+    .icon-container a {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .file-image-holder {
+        height: 100px;
+        width: 100px;
+    }
 }

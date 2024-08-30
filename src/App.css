@@ -93,3 +93,19 @@ body {
 }
 
 .buffer { height: 100px; }
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        height: 7.5vh;
+    }
+
+    .home-icon {
+        height: 3vh;
+        margin: 2.25vh;
+    }
+
+    .navlink {
+        padding: 0 10px 0 10px;
+        font-size: 8px;
+    }
+}

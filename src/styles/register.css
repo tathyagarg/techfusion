@@ -11,10 +11,21 @@
 .reg-folder {
     position: absolute;
 
-    height: 30vh;
+    /* heig */
     width: 30vh;
 
     text-decoration: none;
+}
+
+.reg-folder > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reg-folder .folder-img {
+    height: 20vh;
+    aspect-ratio: 1/1;
 }
 
 .reg-folder:nth-child(1) {
@@ -23,15 +34,13 @@
 }
 
 .reg-folder:nth-child(2) {
-    top: 50%;
+    top: 35%;
     left: 10%;
 }
 
 .reg-folder:nth-child(3) {
-    top: 60%;
-    left: 50%;
-
-    transform: translateX(-50%);
+    top: 70%;
+    left: 10%;
 }
 
 .reg-folder:nth-child(4) {
@@ -40,6 +49,11 @@
 }
 
 .reg-folder:nth-child(5) {
-    top: 50%;
+    top: 35%;
+    right: 10%;
+}
+
+.reg-folder:nth-child(6) {
+    top: 70%;
     right: 10%;
 }

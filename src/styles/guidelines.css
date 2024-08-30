@@ -20,3 +20,13 @@
     color: white;
     font-family: Agrandir;
 }
+
+@media screen and (max-width: 320px) {
+    .rules-container {
+        font-size: 10px;
+    }
+
+    .rules-container ul {
+        padding-left: 10%;
+    }
+}

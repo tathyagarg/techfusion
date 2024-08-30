@@ -20,18 +20,20 @@ export default function Events() {
         <>
             <Transitions></Transitions>
             <div className='content abs'>
-                <a href='' target='_blank' className="res-folder">
-                    <div>
-                        <div className="folder-img"></div>
-                        <div className="folder-name">BROCHURE</div>
-                    </div>
-                </a>
-                <Link to='/resources/oc' className="res-folder">
-                    <div>
-                        <div className="folder-img"></div>
-                        <div className="folder-name">ORGANIZING COMMITTEE</div>
-                    </div>
-                </Link>
+                <div className='folder-holder'>
+                    <a href='' target='_blank' className="res-folder">
+                        <div>
+                            <div className="folder-img"></div>
+                            <div className="folder-name">BROCHURE</div>
+                        </div>
+                    </a>
+                    <Link to='/resources/oc' className="res-folder">
+                        <div>
+                            <div className="folder-img"></div>
+                            <div className="folder-name">ORGANIZING COMMITTEE</div>
+                        </div>
+                    </Link>
+                </div>
                 <div className='terminal-container'>
                     <div className='terminal'>
                         <h1>RESOURCES</h1>
