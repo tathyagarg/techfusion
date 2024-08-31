@@ -33,7 +33,7 @@ export default function WebPalette() {
                         <div className="folder-data-basic">
                             <img src={Folder}></img>
                             <div>
-                                <h1>Web Palette</h1>
+                                <h1>WEB PALETTE</h1>
                                 <h2>Modified: Today, 11:42 AM</h2>
                                 <h2>2MB</h2>
                             </div>
