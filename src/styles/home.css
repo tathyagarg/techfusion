@@ -55,13 +55,13 @@
     padding: 1vh;
 
     border: 5px solid var(--primary);
-    border-radius: 2.5vh;
+    border-radius: 2.5vh;   
 
     background-color: transparent;
     cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
     .header {
         font-size: 50px;
     }

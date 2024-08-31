@@ -302,7 +302,7 @@
     font-family: Agrandir;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
     .folder-img {
         height: 20vh !important;
         aspect-ratio: 1/1;

@@ -94,7 +94,7 @@ body {
 
 .buffer { height: 100px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
     .navbar {
         height: 7.5vh;
     }
