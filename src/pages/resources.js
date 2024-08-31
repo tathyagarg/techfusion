@@ -21,7 +21,7 @@ export default function Events() {
             <Transitions></Transitions>
             <div className='content abs'>
                 <div className='folder-holder'>
-                    <a href='' target='_blank' className="res-folder">
+                    <a href='https://drive.google.com/file/d/1D15vZyTPuUhclXMIoxfYWuBV9nwSaRXj/view?usp=drive_link' target='_blank' className="res-folder">
                         <div>
                             <div className="folder-img"></div>
                             <div className="folder-name">BROCHURE</div>
