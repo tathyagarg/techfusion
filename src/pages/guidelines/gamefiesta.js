@@ -25,7 +25,7 @@ export default function GameFiestaGuidelines() {
                     <h1>FORTNITE</h1>
                     <hr></hr>
                     <ul>
-                        <li>A registration fee of ₹750 applies.</li>
+                        <li>A registration fee of ₹600 applies.</li>
                         <li>Each team should have 5 players (4 main players+ 1 substitute).</li>
                         <li>Any form of cheating will lead to instant disqualification.</li>
                         <li>Further details and topics will be communicated through the designated WhatsApp group.</li>
