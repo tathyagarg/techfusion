@@ -63,10 +63,10 @@ export default function Techknowquiz() {
                     </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <a href='https://forms.gle/DmRxQ46FwJjRSAzbA'>
+                    <Link to='/register/techknowquiz'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION.txt</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container about-icon-container">
                     <Link to='/events/techknowquiz/about'>

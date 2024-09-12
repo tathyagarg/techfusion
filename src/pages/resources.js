@@ -2,7 +2,6 @@ import '../styles/resources.css'
 import { useEffect } from "react";
 import Transitions from '../components/transitions'
 import { Link } from 'react-router-dom';
-import Brochure from '../assets/Techfusion - Brochure.pdf'
 
 const PAGE_INDEX = 1;
 

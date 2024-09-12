@@ -63,10 +63,10 @@ export default function WebPalette() {
                     </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <a href='https://forms.gle/4z2RWcxArZtGUNJt6'>
+                    <Link to='/register/web-palette'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION.txt</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container about-icon-container">
                     <Link to='/events/web-palette/about'>

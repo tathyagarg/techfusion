@@ -64,10 +64,10 @@ export default function DecryptionDuel() {
                     </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <a href='https://forms.gle/KPb6kqf8temWiqFbA'>
+                    <Link to='/register/decryption-duel'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION.txt</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container about-icon-container">
                     <Link to='/events/decryption-duel/about'>

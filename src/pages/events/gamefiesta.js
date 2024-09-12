@@ -64,16 +64,16 @@ export default function Gamefiesta() {
                     </Link>
                 </div>
                 <div className="icon-container registration-icon-container-1">
-                    <a href='https://forms.gle/vACVrXJo6ej2xWy98'>
+                    <Link to='/register/game-fiesta/fortnite'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION-FORTNITE.txt</p>                        
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container registration-icon-container-2">
-                    <a href='https://forms.gle/YJ9qfK24SMuKunKD8'>
+                    <Link to='/register/game-fiesta/valorant'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION-VALORANT.txt</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container about-icon-container">
                     <Link to='/events/game-fiesta/about'>

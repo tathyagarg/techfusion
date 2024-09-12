@@ -20,6 +20,12 @@ import DecryptionDuelAbout from './pages/about/decryptionduel';
 import GameFiestaAbout from './pages/about/gamefiesta';
 import HackathonAbout from './pages/about/hackathon';
 import WebPaletteAbout from './pages/about/webpalette';
+import DecryptionDuelRegistration from './pages/registrations/decryptionduel';
+import FortniteRegistration from './pages/registrations/fortnite';
+import ValorantRegistration from './pages/registrations/valorant';
+import HackathonRegistration from './pages/registrations/hackathon';
+import TechknowquizRegistration from './pages/registrations/techknowquiz';
+import WebPaletteRegistration from './pages/registrations/webpalette';
 import OC from './pages/oc';
 
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
@@ -56,6 +62,12 @@ const Animated = () => {
                 <Route exact path='/events/decryption-duel/about' Component={DecryptionDuelAbout}/>
                 <Route exact path='/events/web-palette/about' Component={WebPaletteAbout}/>
                 <Route exact path='/register' Component={Registration}/>
+                <Route exact path='/register/decryption-duel' Component={DecryptionDuelRegistration}/>
+                <Route exact path='/register/game-fiesta/fortnite' Component={FortniteRegistration}/>
+                <Route exact path='/register/game-fiesta/valorant' Component={ValorantRegistration}/>
+                <Route exact path='/register/hack-a-thon' Component={HackathonRegistration}/>
+                <Route exact path='/register/techknowquiz' Component={TechknowquizRegistration}/>
+                <Route exact path='/register/web-palette' Component={WebPaletteRegistration}/>
             </Routes>
         </AnimatePresence>
     )

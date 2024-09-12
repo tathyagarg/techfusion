@@ -64,10 +64,10 @@ export default function Hackathon() {
                     </Link>
                 </div>
                 <div className="icon-container registration-icon-container">
-                    <a href='https://forms.gle/ye6VMk2SNK7G2yPS8'>
+                    <Link to='/register/hack-a-thon'>
                         <div className="file-image-holder"></div>
                         <p>REGISTRATION.txt</p>
-                    </a>
+                    </Link>
                 </div>
                 <div className="icon-container about-icon-container">
                     <Link to='/events/hack-a-thon/about'>
