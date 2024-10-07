@@ -28,16 +28,25 @@ CHALLENGE_2 = os.getenv("CHALLENGE_2")
 CHALLENGE_3 = os.getenv("CHALLENGE_3")
 CHALLENGE_4 = os.getenv("CHALLENGE_4")
 CHALLENGE_5 = os.getenv("CHALLENGE_5")
+CHALLENGE_6 = os.getenv("CHALLENGE_6")
 
-CHALLENGES = [CHALLENGE_1, CHALLENGE_2, CHALLENGE_3, CHALLENGE_4, CHALLENGE_5]
+CHALLENGES = [
+    CHALLENGE_1,
+    CHALLENGE_2,
+    CHALLENGE_3,
+    CHALLENGE_4,
+    CHALLENGE_5,
+    CHALLENGE_6,
+]
 
 LINK_2 = os.getenv("LINK_2")
 LINK_3 = os.getenv("LINK_3")
 LINK_4 = os.getenv("LINK_4")
 LINK_5 = os.getenv("LINK_5")
 LINK_6 = os.getenv("LINK_6")
+LINK_7 = os.getenv("LINK_7")
 
-LINKS = [LINK_2, LINK_3, LINK_4, LINK_5, LINK_6]
+LINKS = [LINK_2, LINK_3, LINK_4, LINK_5, LINK_6, LINK_7]
 
 
 @router.get("/drop")
@@ -69,6 +78,7 @@ def create_tables(password: str):
                     challenge_3 TIMESTAMP DEFAULT NULL,
                     challenge_4 TIMESTAMP DEFAULT NULL,
                     challenge_5 TIMESTAMP DEFAULT NULL,
+                    challenge_6 TIMESTAMP DEFAULT NULL,
                     PRIMARY KEY (id)
                 )"""
             )

@@ -35,6 +35,7 @@ import Challenge2 from './pages/challenges/challenge-2';
 import Challenge3 from './pages/challenges/challenge-3';
 import Challenge4 from './pages/challenges/challenge-4';
 import Challenge5 from './pages/challenges/challenge-5';
+import Challenge6 from './pages/challenges/challenge-6';
 import Complete from './pages/challenges/challenge-complete';
 import ChallengeQR from './pages/challenges/challenge-qr';
 
@@ -85,6 +86,7 @@ const Animated = () => {
                 <Route exact path='/challenge/challenge-6029' Component={Challenge3}/>
                 <Route exact path='/challenge/challenge-6881' Component={Challenge4}/>
                 <Route exact path='/challenge/challenge-2772' Component={Challenge5}/>
+                <Route exact path='/challenge/challenge-5102' Component={Challenge6}/>
                 <Route exact path='/challenge/challenge-complete' Component={Complete}/>
                 <Route exact path='/challenge/challenge-qr' Component={ChallengeQR}/>
             </Routes>
