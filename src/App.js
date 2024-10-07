@@ -28,6 +28,15 @@ import TechknowquizRegistration from './pages/registrations/techknowquiz';
 import WebPaletteRegistration from './pages/registrations/webpalette';
 import OC from './pages/oc';
 
+import RegisterPage from './pages/challenges/register';
+import Submit from './pages/challenges/submit';
+import Challenge1 from './pages/challenges/challenge-1';
+import Challenge2 from './pages/challenges/challenge-2';
+import Challenge3 from './pages/challenges/challenge-3';
+import Challenge4 from './pages/challenges/challenge-4';
+import Complete from './pages/challenges/challenge-complete';
+import ChallengeQR from './pages/challenges/challenge-qr';
+
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
@@ -68,6 +77,14 @@ const Animated = () => {
                 <Route exact path='/register/hack-a-thon' Component={HackathonRegistration}/>
                 <Route exact path='/register/techknowquiz' Component={TechknowquizRegistration}/>
                 <Route exact path='/register/web-palette' Component={WebPaletteRegistration}/>
+                <Route exact path='/challenge/register' Component={RegisterPage}/>
+                <Route exact path='/challenge/submit' Component={Submit}/>
+                <Route exact path='/challenge/challenge-5302' Component={Challenge1}/>
+                <Route exact path='/challenge/challenge-0658' Component={Challenge2}/>
+                <Route exact path='/challenge/challenge-6029' Component={Challenge3}/>
+                <Route exact path='/challenge/challenge-6881' Component={Challenge4}/>
+                <Route exact path='/challenge/challenge-complete' Component={Complete}/>
+                <Route exact path='/challenge/challenge-qr' Component={ChallengeQR}/>
             </Routes>
         </AnimatePresence>
     )

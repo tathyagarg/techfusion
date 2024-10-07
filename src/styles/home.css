@@ -55,7 +55,7 @@
     padding: 1vh;
 
     border: 5px solid var(--primary);
-    border-radius: 2.5vh;   
+    border-radius: 2.5vh;
 
     background-color: transparent;
     cursor: pointer;
@@ -65,4 +65,20 @@
     .header {
         font-size: 50px;
     }
+}
+
+.content-blocker {
+    position: absolute;
+    pointer-events: none;
+
+    height: 100%;
+    width: 100vw;
+    background-color: white;
+}
+
+.content-blocker h1 {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
 }
