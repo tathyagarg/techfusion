@@ -27,9 +27,8 @@ CHALLENGE_1 = os.getenv("CHALLENGE_1")
 CHALLENGE_2 = os.getenv("CHALLENGE_2")
 CHALLENGE_3 = os.getenv("CHALLENGE_3")
 CHALLENGE_4 = os.getenv("CHALLENGE_4")
-CHALLENGE_5 = os.getenv("CHALLENGE_5")
 
-CHALLENGES = [CHALLENGE_1, CHALLENGE_2, CHALLENGE_3, CHALLENGE_4, CHALLENGE_5]
+CHALLENGES = [CHALLENGE_1, CHALLENGE_2, CHALLENGE_3, CHALLENGE_4]
 
 LINK_2 = os.getenv("LINK_2")
 LINK_3 = os.getenv("LINK_3")
@@ -37,6 +36,18 @@ LINK_4 = os.getenv("LINK_4")
 LINK_5 = os.getenv("LINK_5")
 
 LINKS = [LINK_2, LINK_3, LINK_4, LINK_5]
+
+
+@router.get("/drop")
+def drop_tables(password: str):
+    if password != ADMIN:
+        return
+
+    with mysql.connector.connect(**DB_CONFIG) as db:
+        with db.cursor(buffered=True) as cursor:
+            cursor.execute("""DROP TABLE participants""")
+
+        db.commit()
 
 
 @router.get("/create-tables", status_code=status.HTTP_200_OK)
