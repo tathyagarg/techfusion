@@ -31,7 +31,15 @@ export default function Challenge4() {
             </div>
             <div className="rules-container">
                 <h1>Instructions</h1>
-                Oh no! Looks like some word robbers have stolen some words from this poem. For your next flag, find which words have been removed from the poem. Then, take these words, mash them all together, and sort the letters in alphabetical order. Your flag is the lowercase form of the resultant string.
+                Oh no! Looks like some word robbers have stolen some words from this poem. For your next flag, find which words have been removed from the poem. Then, take these words in lowercase form, mash them all together, and sort the letters in alphabetical order. Your flag is the resultant string.<br/>
+                For example, if the words were "Hello Hi", your result would be:<br/>
+                <ol>
+                    <li>Lowercase - "hello hi"</li>
+                    <li>Mash the words together - "hellohi"</li>
+                    <li>Sort alphabetically - "ehhillo"</li>
+                </ol>
+
+                So, in this case, "ehhillo" would be the flag.<br/>
             </div>
         </div>
     </>
