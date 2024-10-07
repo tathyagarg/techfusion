@@ -14,7 +14,7 @@ export default function RegisterPage() {
                     event.preventDefault()
                     let name = event.target[0].value;
 
-                    fetch(`challenge/add-participant`, {
+                    fetch(`https://www.techfusion.net.in/challenge/add-participant`, {
                         method: 'POST',
                         headers: {
                             'Access-Control-Allow-Origin': '*'

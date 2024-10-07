@@ -15,7 +15,7 @@ export default function Submit() {
                     data.append('user_id', event.target[0].value)
                     data.append('flag', event.target[1].value)
 
-                    fetch('http://0.0.0.0:5000/challenge/process-submission', {
+                    fetch('https://www.techfusion.net.in/challenge/process-submission', {
                         method: 'POST',
                         headers: {
                             'Access-Control-Allow-Origin': '*'
