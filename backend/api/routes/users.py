@@ -157,3 +157,14 @@ def process_submission(res: Annotated[str, Body(...)]):
                 return LINKS[unsolved]
 
     return False
+
+
+@router.get("/get-users")
+def get_users(password: str):
+    if password != ADMIN:
+        return
+
+    with mysql.connector.connect(**DB_CONFIG) as db:
+        with db.cursor(buffered=True) as cursor:
+            cursor.execute("SELECT * FROM participants")
+            return cursor.fetchall()
