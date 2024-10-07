@@ -14,7 +14,7 @@ export default function RegisterPage() {
                     event.preventDefault()
                     let name = event.target[0].value;
 
-                    fetch(`http://0.0.0.0:5000/challenge/add-participant`, {
+                    fetch(`challenge/add-participant`, {
                         method: 'POST',
                         headers: {
                             'Access-Control-Allow-Origin': '*'
