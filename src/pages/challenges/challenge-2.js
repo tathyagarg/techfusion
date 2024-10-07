@@ -5,7 +5,7 @@ export default function Challenge2() {
                 <h1>Why is this page so bright?</h1>
                 <div className="centerify" style={{position: "absolute", top: "200px", left: "50%", transform: "translateX(-50%)", color: "white", userSelect: "none", width: "100%"}}>
                     <h1>Finally, you can see something now!</h1>
-                    <h2 style={{marginTop: '100px'}}>Here's your second flag: Ephemeral</h2>
+                    <h2 style={{marginTop: '100px'}}>Here's your second flag: ephemeral</h2>
                 </div>
             </div>
 
