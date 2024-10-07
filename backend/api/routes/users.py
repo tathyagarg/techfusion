@@ -133,7 +133,7 @@ def process_submission(res: Annotated[str, Body(...)]):
     with mysql.connector.connect(**DB_CONFIG) as db:
         with db.cursor(buffered=True) as cursor:
             cursor.execute(
-                """SELECT challenge_1, challenge_2, challenge_3, challenge_4, challenge_5 FROM participants WHERE user_id = %s""",
+                """SELECT challenge_1, challenge_2, challenge_3, challenge_4, challenge_5, challenge_6 FROM participants WHERE user_id = %s""",
                 (user_id,),
             )
             challenges = cursor.fetchone()
