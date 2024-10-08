@@ -28,11 +28,11 @@ export default function Submit() {
                         .then(response => response.json())
                         .then(data => {
                             const elem = document.getElementById('next-link')
-                            if (data !== -1 && data !== 0) {
+                            if (data !== -1 && data !== false) {
                                 document.getElementById('not-registered').style.display = "none"
                                 elem.href = `/challenge/challenge-${data}`
                                 elem.style.color = '#00ff00'
-                            } else if (data === 0) {
+                            } else if (data === false) {
                                 document.getElementById('not-registered').style.display = "none"
                                 elem.style.color = '#ff0000'
                             } else {
