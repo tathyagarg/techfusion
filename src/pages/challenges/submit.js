@@ -27,17 +27,20 @@ export default function Submit() {
                     })
                         .then(response => response.json())
                         .then(data => {
+                            const elem = document.getElementById('next-link')
                             if (data) {
-                                const elem = document.getElementById('next-link')
                                 elem.href = `/challenge/challenge-${data}`
+                                elem.style.color = '#00ff00'
+                            } else {
+                                elem.style.color = '#ff0000'
                             }
                         })
                 }}>
                     <label for="uid">User ID: </label>
-                    <input type="text" id="uid" name="uid"></input>
+                    <input type="text" id="uid" name="uid" required></input>
                     <br></br>
                     <label for="flag">Flag: </label>
-                    <input type="text" id="flag" name="flag"></input>
+                    <input type="text" id="flag" name="flag" required></input>
                     <input type="submit" value="Submit"/>
                 </form>
                 <div>

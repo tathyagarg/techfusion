@@ -81,7 +81,7 @@ const Animated = () => {
                 <Route exact path='/register/web-palette' Component={WebPaletteRegistration}/>
                 <Route exact path='/challenge/register' Component={RegisterPage}/>
                 <Route exact path='/challenge/submit' Component={Submit}/>
-                <Route exact path='/challenge/challenge-5302' Component={Challenge1}/>
+                <Route exact path='/challenge/challenge-1982' Component={Challenge1}/>
                 <Route exact path='/challenge/challenge-0658' Component={Challenge2}/>
                 <Route exact path='/challenge/challenge-6029' Component={Challenge3}/>
                 <Route exact path='/challenge/challenge-6881' Component={Challenge4}/>
