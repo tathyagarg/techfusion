@@ -28,11 +28,15 @@ export default function Submit() {
                         .then(response => response.json())
                         .then(data => {
                             const elem = document.getElementById('next-link')
-                            if (data) {
+                            if (data !== -1 && data !== 0) {
+                                document.getElementById('not-registered').style.display = "none"
                                 elem.href = `/challenge/challenge-${data}`
                                 elem.style.color = '#00ff00'
-                            } else {
+                            } else if (data === 0) {
+                                document.getElementById('not-registered').style.display = "none"
                                 elem.style.color = '#ff0000'
+                            } else {
+                                document.getElementById('not-registered').style.display = "block"
                             }
                         })
                 }}>
@@ -44,6 +48,7 @@ export default function Submit() {
                     <input type="submit" value="Submit"/>
                 </form>
                 <div>
+                    <p id="not-registered" style={{display: "none"}}>You are not registered! Go to <a href="https://www.techfusion.net.in/challenge/register to register and get a valid user ID!"></a></p>
                     <a id="next-link">If your answer is correct, this element will take you to the next challenge.</a>
                 </div>
             </div>

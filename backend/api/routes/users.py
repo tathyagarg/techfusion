@@ -130,18 +130,28 @@ class ResBlock(BaseModel):
 def process_submission(res: Annotated[str, Body(...)]):
     res = json.loads(res)
     user_id, flag = res["user_id"], res["flag"]
+    print(f"{user_id = } submitted {flag = }")
+
     with mysql.connector.connect(**DB_CONFIG) as db:
         with db.cursor(buffered=True) as cursor:
             cursor.execute(
                 """SELECT challenge_1, challenge_2, challenge_3, challenge_4, challenge_5, challenge_6 FROM participants WHERE user_id = %s""",
                 (user_id,),
             )
+            rowcount = cursor.rowcount
+            if rowcount == 0:
+                return -1
+
             challenges = cursor.fetchone()
             unsolved = -1
             for i, challenge in enumerate(challenges):
                 if not challenge:
                     unsolved = i
                     break
+
+            print(
+                f"{user_id} - Unsolved challenge index = {unsolved} (answer is {CHALLENGES[unsolved]})"
+            )
 
             solution = CHALLENGES[unsolved]
 
