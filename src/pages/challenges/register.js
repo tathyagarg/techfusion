@@ -27,7 +27,7 @@ export default function RegisterPage() {
                         })
                 }}>
                     <label for="name">Name: </label>
-                    <input type="text" id="name" name="name"></input>
+                    <input type="text" id="name" name="name" required></input>
                     <input type="submit" value="Submit"/>
                 </form>
                 <div>Your User ID is <p id="uid">...</p></div>
